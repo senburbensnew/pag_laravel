@@ -13,10 +13,12 @@
 
 <body class="bg-gray-100 dark:bg-gray-900">
     <div class="min-h-screen">
-        <div class="container mx-auto px-4 py-8">
-            {{--             <div class="text-center mb-6">
-                <h1 class="text-4xl font-bold text-gray-800 dark:text-white">Accueil</h1>
-            </div> --}}
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center mb-3">
+                <a href="/">
+                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                </a>
+            </div>
 
             <div class="max-w-4xl mx-auto">
                 <p class="font-bold text-gray-600 dark:text-gray-300 text-center mb-2">
