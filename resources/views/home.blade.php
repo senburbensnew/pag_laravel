@@ -68,7 +68,7 @@
                             <p class="text-sm text-gray-600 dark:text-gray-300 mb-6 italic">
                                 Vous serez redirigé vers la section des objectifs
                             </p>
-                            <a href=""
+                            <a href="{{ route('objectif') }}"
                                 class="w-full inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 group-button">
                                 <span>Accéder</span>
                                 <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
@@ -101,7 +101,7 @@
                             <p class="text-sm text-gray-600 dark:text-gray-300 mb-6 italic">
                                 Vous serez redirigé vers la section des activités
                             </p>
-                            <a href=""
+                            <a href="{{ route('activite') }}"
                                 class="w-full inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 group-button">
                                 <span>Accéder</span>
                                 <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
@@ -133,7 +133,7 @@
                             <p class="text-sm text-gray-600 dark:text-gray-300 mb-6 italic">
                                 Vous serez redirigé vers le tableau de bord
                             </p>
-                            <a href=""
+                            <a href="{{ route('suivi') }}"
                                 class="w-full inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 group-button">
                                 <span>Accéder</span>
                                 <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"

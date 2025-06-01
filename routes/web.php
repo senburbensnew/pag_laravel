@@ -16,7 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-})->middleware(['auth']);
+})->middleware(['auth'])->name('home');
+
+Route::get('/objectif', function () {
+    return view('objectif');
+})->middleware(['auth'])->name('objectif');
+
+Route::get('/suivi', function () {
+    return view('suivi');
+})->middleware(['auth'])->name('suivi');
+
+Route::get('/activite', function () {
+    return view('activite');
+})->middleware(['auth'])->name('activite');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
