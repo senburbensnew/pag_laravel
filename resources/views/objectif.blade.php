@@ -15,9 +15,9 @@
         }
     </script>
 
-    <div class="max-w-4xl mx-auto py-8 px-4">
+    <div class="mx-auto py-8 px-4">
         <!-- Header -->
-        <header class="text-left mb-10">
+        <header class="text-left mb-10 bg-white rounded-xl p-6">
             <h1 class="text-3xl font-bold text-secondary mb-2">
                 {{-- <i class="fas fa-bullseye mr-2"></i> --}}
                 Programmer un objectif
@@ -28,95 +28,90 @@
 
         <!-- Form Container -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <form action="#" method="POST">
+            <form action="#" method="POST" class="grid grid-cols-2">
                 @csrf
 
-                <!-- Section 1: Chantier Selection -->
-                <div class="p-6 border-b">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                            1</div>
-                        <h2 class="text-xl font-semibold text-gray-800">1. Choisissez le chantier de travail qui correspond
-                            a
-                            l'activite a mettre en oeuvre</h2>
-                    </div>
-
-                    <div class="ml-11">
-                        <p class="text-gray-600 mb-4">Quel chantier ?</p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 items-center">
-                            <select class="rounded-lg border border-gray-300 p-2">
-                                <option disabled selected>Choisir un chantier</option>
-                            </select>
-                            <span class="text-blue-500 rounded-lg px-4 py-2">
-                                <a href="#">Ajouter</a>
-                            </span>
+                <div>
+                    <!-- Section 1: Chantier Selection -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h2 class="text-xl font-semibold text-gray-800">1. Choisissez le chantier de travail qui
+                                correspond
+                                a
+                                l'activite a mettre en oeuvre</h2>
                         </div>
 
-                    </div>
-                </div>
+                        <div>
+                            <p class="text-gray-600 mb-4">Quel chantier ?</p>
 
-                <!-- Section 2: Objective Definition -->
-                <div class="p-6 border-b">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                            2</div>
-                        <h2 class="text-xl font-semibold text-gray-800">2. Saisissez l'objectif que vous voulez poursuivre
-                            pour
-                            contribuer a la realisation de ce chantier</h2>
-                    </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 items-center">
+                                <select class="rounded-lg border border-gray-300 p-2">
+                                    <option disabled selected>Choisir un chantier</option>
+                                </select>
+                                <span class="text-blue-500 rounded-lg px-4 py-2">
+                                    <a href="#">Ajouter</a>
+                                </span>
+                            </div>
 
-                    <div class="ml-11">
-                        <label class="block text-gray-700 mb-2">Quel objectif ?</label>
-                        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
-                            <div class="md:col-span-1">
-                                <input type="text" id="objective-code" name="objective_code" value="Obj-01"
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
-                            </div>
-                            <div class="md:col-span-4">
-                                <input type="text" id="objective" name="objective"
-                                    placeholder="Décrivez votre objectif..."
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
-                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Section 3: Timeline -->
-                <div class="p-6 border-b">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                            3</div>
-                        <h2 class="text-xl font-semibold text-gray-800">3. Quand souhaitez-vous le réaliser ?</h2>
-                    </div>
+                    <!-- Section 2: Objective Definition -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h2 class="text-xl font-semibold text-gray-800">2. Saisissez l'objectif que vous voulez
+                                poursuivre
+                                pour
+                                contribuer a la realisation de ce chantier</h2>
+                        </div>
 
-                    <div class="ml-11">
-                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-                            <div class="flex">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-lightbulb text-yellow-400 text-xl"></i>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Quel objectif ?</label>
+                            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
+                                <div class="md:col-span-1">
+                                    <input type="text" id="objective-code" name="objective_code" value="Obj-01"
+                                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
                                 </div>
-                                <div class="ml-3">
-                                    <p class="text-sm text-yellow-700">
-                                        Conseil : Soyez le plus raisonnable que possible.
-                                    </p>
+                                <div class="md:col-span-4">
+                                    <input type="text" id="objective" name="objective"
+                                        placeholder="Décrivez votre objectif..."
+                                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-gray-700 mb-2">Date début</label>
-                                <input type="date" name="start_date"
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
+                    <!-- Section 3: Timeline -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h2 class="text-xl font-semibold text-gray-800">3. Quand souhaitez-vous le réaliser ?</h2>
+                        </div>
+
+                        <div>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-lightbulb text-yellow-400 text-xl"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-yellow-700">
+                                            Conseil : Soyez le plus raisonnable que possible.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Date fin</label>
-                                <input type="date" name="end_date"
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Date début</label>
+                                    <input type="date" name="start_date"
+                                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Date fin</label>
+                                    <input type="date" name="end_date"
+                                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
+                                </div>
                             </div>
                         </div>
                     </div>

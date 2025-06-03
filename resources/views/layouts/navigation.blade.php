@@ -11,15 +11,25 @@
                 </div>
 
                 <!-- Navigation Links -->
-                {{--                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('dashboard')">
+                        {{ __('Accueil') }}
                     </x-nav-link>
-                </div> --}}
+                    <x-nav-link :href="route('objectif')" :active="request()->routeIs('dashboard')">
+                        {{ __('Objectif') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('activite')" :active="request()->routeIs('dashboard')">
+                        {{ __('Activite') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('suivi')" :active="request()->routeIs('dashboard')">
+                        {{ __('Suivi') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
+                <span class="font-bold">{{ auth()->user()->prenom }} {{ auth()->user()->nom }}</span>
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
