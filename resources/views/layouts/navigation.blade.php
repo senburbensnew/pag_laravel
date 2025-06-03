@@ -12,16 +12,19 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('home')">
                         {{ __('Accueil') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('objectif')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('chantier')" :active="request()->routeIs('chantier')">
+                        {{ __('Chantier') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('objectif')" :active="request()->routeIs('objectif')">
                         {{ __('Objectif') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('activite')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('activite')" :active="request()->routeIs('activite')">
                         {{ __('Activite') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('suivi')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('suivi')" :active="request()->routeIs('suivi')">
                         {{ __('Suivi') }}
                     </x-nav-link>
                 </div>

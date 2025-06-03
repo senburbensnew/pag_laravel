@@ -30,6 +30,14 @@ Route::get('/activite', function () {
     return view('activite');
 })->middleware(['auth'])->name('activite');
 
+Route::get('/chantier', function () {
+    return view('chantier');
+})->middleware(['auth'])->name('chantier');
+
+/* Route::post('/chantier', function () {
+    return view('chantier');
+})->middleware(['auth'])->name('store.chantier'); */
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

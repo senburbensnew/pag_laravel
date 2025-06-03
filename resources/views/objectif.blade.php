@@ -22,7 +22,7 @@
                 {{-- <i class="fas fa-bullseye mr-2"></i> --}}
                 Programmer un objectif
             </h1>
-            <p class="text-gray-600">Bonjour ! <br />Vous êtes invité.e à programmer votre objectif. Suivez les instructions
+            <p class="text-gray-600">Vous êtes invité.e à programmer votre objectif. Suivez les instructions
                 !</p>
         </header>
 
@@ -49,7 +49,7 @@
                                     <option disabled selected>Choisir un chantier</option>
                                 </select>
                                 <span class="text-blue-500 rounded-lg px-4 py-2">
-                                    <a href="#">Ajouter</a>
+                                    <a href="{{ route('chantier') }}">Ajouter</a>
                                 </span>
                             </div>
 
@@ -69,7 +69,7 @@
                             <label class="block text-gray-700 mb-2">Quel objectif ?</label>
                             <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
                                 <div class="md:col-span-1">
-                                    <input type="text" id="objective-code" name="objective_code" value="Obj-01"
+                                    <input type="text" id="objective-code" name="objective_code" placeholder="Obj-01"
                                         class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
                                 </div>
                                 <div class="md:col-span-4">
@@ -154,7 +154,7 @@
                             <h3 class="font-medium text-lg text-gray-800 mb-3">Résultat 1</h3>
                             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
                                 <div class="md:col-span-1">
-                                    <input type="text" name="result_codes[]" value="Res-01"
+                                    <input type="text" name="result_codes[]" placeholder="Res-01"
                                         class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
                                 </div>
                                 <div class="md:col-span-4">
@@ -169,7 +169,7 @@
                             <h3 class="font-medium text-lg text-gray-800 mb-3">Résultat 2</h3>
                             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
                                 <div class="md:col-span-1">
-                                    <input type="text" name="result_codes[]" value="Res-02"
+                                    <input type="text" name="result_codes[]" placeholder="Res-02"
                                         class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary">
                                 </div>
                                 <div class="md:col-span-4">
@@ -186,7 +186,7 @@
                                 <div class="md:col-span-1">
                                     <input type="text" name="result_codes[]"
                                         class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:border-primary"
-                                        placeholder="Code">
+                                        placeholder="Res-03">
                                 </div>
                                 <div class="md:col-span-4">
                                     <textarea name="results[]" rows="2" placeholder="Décrivez le résultat attendu..."
@@ -196,11 +196,10 @@
                         </div>
 
                         <!-- Save Button -->
-                        <div class="flex justify-center mt-10">
-                            <button type="submit"
-                                class="flex items-center bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
-                                <i class="fas fa-save mr-2"></i>Sauvegarder
-                            </button>
+                        <div class="flex justify-end mt-10">
+                            <x-primary-button>
+                                {{ __('Sauvegarder') }}
+                            </x-primary-button>
                         </div>
                     </div>
                 </div>

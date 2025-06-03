@@ -7,5 +7,7 @@
     "Register": "S'inscrire",
     "Confirm Password": "Confirmez le mot de passe",
     "Name": "Nom",
-    "Already registered?": "Déjà inscrit ?"
+    "Already registered?": "Déjà inscrit ?",
+    "Profile" : "Profil",
+    "Log Out" : "Déconnexion"
 }
