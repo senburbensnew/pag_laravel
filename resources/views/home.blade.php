@@ -14,20 +14,25 @@
 <body class="bg-gray-100 dark:bg-gray-900">
     <div class="min-h-screen">
         <div class="container mx-auto px-4">
-            <div class="flex justify-center mb-3">
+            <div class="flex justify-center items-center mb-2">
                 <a href="/">
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
                 </a>
+                <h1 class="text-gray-500 text-2xl ml-4">Plan d'Action Global</h1>
             </div>
 
             <div class="max-w-4xl mx-auto">
                 <p class="font-bold text-gray-600 dark:text-gray-300 text-center mb-2">
-                    Veuillez sélectionner la fenêtre que vous souhaitez ouvrir.
+                    ACCUEIL
                 </p>
                 <p class="text-red-500 dark:text-red-400 text-sm text-center mb-4 px-4">
-                    Conformément à la legislation haitienne en vigueur, toute utilisation inappropriée ou violation de
-                    cette confidentialité entraînera des sanctions légales. Soyez vigilant(e) et responsable dans
-                    l'utilisation de votre accès.
+                    Veuillez noter que l'accès à cet espace est strictement confidentiel. Vous êtes tenu(e) au
+                    secret
+                    professionnel conformément à la législation haïtienne en vigueur. Toute utilisation
+                    inappropriée ou
+                    violation de cette confidentialité entraînera des sanctions légales. Soyez vigilant(e) et
+                    responsable
+                    dans l'utilisation de vos accès.
                 </p>
 
                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md mb-8">
